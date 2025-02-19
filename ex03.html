@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width device-width, initial-scale=1.0">
+    <title>Exercicio 3 - JavaScript e Frameworks</title>
+</head>
+<body>
+  <h2>JavaScript - Exemplo 11</h2>
+  <hr>
+  <p>Digite um valor para X:</p>
+  <input type="number" id="x" value="0">
+  <p>Digite um valor para Y:</p>
+    <input type="number" id="y" value="0">
+    <br>
+    <button onclick="funcao()">Multiplique</button>
+    <p id="ex11"></p>
+    <script>
+      
+      function funcao(){
+        let valorUm=document.getElementById('x').value;
+        let valorDois=document.getElementById('y').value;
+        let multiplicacao = valorUm * valorDois;
+        let resposta=document.getElementById("ex11").innerHTML="o resultado da multiplicação é:" + multiplicacao;
+      };
+    </script>
+</body>
+</html>
