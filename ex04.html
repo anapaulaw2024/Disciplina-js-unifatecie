@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width device-width, initial-scale=1.0">
+    <title>Exercicio 4 - JavaScript e Frameworks</title>
+</head>
+<body>
+  <h2> JavaScript - Exemplo 10</h2>
+  <hr>
+  <p id="ex101"></p>
+  <p id="ex102"></p>
+  <p id="ex103"></p>
+  <p id="ex104"></p>
+  <script>
+    let altura = 1.60;
+    var peso = 60;
+    let cadastro = {Nome:"Fulano ",Sobrenome:"de Souza"};
+    document.getElementById("ex101").innerHTML = cadastro.Nome + "" + cadastro.Sobrenome;
+    document.getElementById("ex102").innerHTML = "Peso:" + peso;
+    document.getElementById("ex103").innerHTML = "Altura:" + altura;
+    
+    let imc = peso /(altura*altura);
+    document.getElementById("ex104").innerHTML = "IMC" + imc;
+    
+  </script>
+  
+</body>
